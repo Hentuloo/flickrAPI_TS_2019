@@ -1,0 +1,19 @@
+.mainTemplate {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: 30vh 50px 1fr;
+
+  @include mq(tablet) {
+    grid-template-rows: 30vh 60px 1fr;
+  }
+
+  @include mq(large) {
+    grid-template-rows: 30vh 70px 1fr;
+  }
+
+  &__header {}
+
+  &__navigation {}
+
+  &__content {}
+}

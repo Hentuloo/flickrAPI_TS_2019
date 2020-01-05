@@ -1,0 +1,49 @@
+.galleryPage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 1300px;
+  margin: 20px auto 0px;
+  padding: 5px 20px;
+
+  @include mq(mobile) {
+    padding: 15px 40px;
+  }
+
+  &__spiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+
+    &-text {
+    }
+
+    &-element {
+    }
+  }
+
+  &__error {
+    display: flex;
+    height: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: map-get($fs, m);
+    text-align: center;
+
+    @include mq(mobile) {
+      flex-direction: row;
+    }
+
+    &-icon {
+      margin-right: 20px;
+      font-size: 80px;
+      color: nth($red, 1);
+    }
+
+    &-message {
+    }
+  }
+}

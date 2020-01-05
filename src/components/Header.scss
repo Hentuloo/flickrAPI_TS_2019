@@ -1,0 +1,21 @@
+.header {
+  position: relative;
+  overflow: hidden;
+
+  &__image {
+    position: absolute;
+    max-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include mq(mobile) {
+      transform: translate(-50%, -60%);
+    }
+
+    @include mq(desktop) {
+      transform: translate(-50%, -70%);
+    }
+  }
+}
